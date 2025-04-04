@@ -30,7 +30,7 @@ This project was built using the following Python libraries:
 
 ## Environment Setup
 
-Use `virtualenv` to create an isolated environment and install dependencies:
+
 
 ```bash
 # Create virtual environment
