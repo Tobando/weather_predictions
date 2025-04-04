@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "weather_prediction"
+version = "0.0.1"
+description = "This project aims to predict urban air pollution levels using machine learning techniques. Poor air quality, driven by pollutants like PM2.5 and ozone, poses significant health risks, especially in cities. Traditional monitoring systems provide real-time data but lack predictive capabilities and broad coverage."
+authors = [
+  { name = "Tamara Obando" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.10.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["weather_prediction"]
+include = ["pyproject.toml", "weather_prediction/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["weather_prediction"]
+force-sort-within-sections = true
+
