@@ -24,7 +24,7 @@ This project was built using the following Python libraries:
 - `ruff` (for linting)
 - `click` (for command-line interfaces)
 
-All dependencies are listed in the `requirements.txt` file. You can install them with the command below after setting up your environment.
+
 
 ---
 
